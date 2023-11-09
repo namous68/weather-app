@@ -1,21 +1,19 @@
+body {
+  background: #202629;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100px;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +26,66 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+/* Weather */
+.weather.card {
+  margin-top:4vh;
+}
+
+.weather.card .card-content {
+  background: #0b0829;
+}
+
+.weather.card .card-action {
+  background: #120944;
+}
+
+.weather .temperature {
+  margin-left:4vh;
+  font-size:120px;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: -1px 0 #61dafb, 0 1px #61dafb, 1px 0 #61dafb, 0 -1px #61dafb;
+}
+
+.clickedDay{
+  font-weight: bold;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center; 
+}
+
+
+.cityInput{
+  flex:1;
+  width: 600px !important;
+  
+  background-color: #f2f2f2 !important;
+  border: 1px solid #ccc !important;
+  
+  font-size: 16px !important;
+  border-radius: 20px !important;
+  font-size: large;
+}
+
+.search_icon{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 90px;
+height: 50px;
+background:rgb(125, 145, 234) ;
+cursor: pointer;
+border-radius: 20px;
+
+}
+
+canvas {
+  margin-left: 500px;
+  height: 400px !important;
+  width: 900px !important;
+  background-color: #383d3e;
 }
